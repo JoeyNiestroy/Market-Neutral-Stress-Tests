@@ -9,7 +9,7 @@ The workflow is:
 1. Build a top-N equity universe from database and compute daily returns.
 2. Estimate rolling alpha and beta coefficients and obtain out-of-sample idiosyncratic returns. Where market returns are determined by the universe
 3. Treat future idiosyncratic returns as an oracle signal and degrade them into 'synthetic' alpha forecasts with controlled ICs via:
-$\hat{\alpha} = \rho \alpha_{\text{true}} + \sqrt{1-\rho^2}\,\varepsilon$
+$\hat{\alpha} = \rho \alpha_{\text{true}} + \sqrt{1-\rho^2}\ * \varepsilon$
 
 where $\(\alpha_{\text{true}}\)$ is the true future idio return calculated in 2, $\(\varepsilon\)$ is a noise vector, and $\(\rho\)$ is the desired IC. 
 
